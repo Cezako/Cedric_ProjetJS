@@ -1,5 +1,7 @@
 
+// not used
 
+/*
 export function createElementNode(element){
   
     const node = document.createElement(element.tag)
@@ -16,3 +18,4 @@ export function createElementNode(element){
     
     return node
 }
+*/
