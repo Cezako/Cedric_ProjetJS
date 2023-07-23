@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cezako_ProjetJS_01</title>
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+
 <body>
+
+    <h1>Manga search</h1>
+    <div class="container">
+
+        <div class="containerSearch">
+            <form>
+                <input type="text" id="searchInput" placeholder="Search Manga..." />
+                <button type="submit">Search <i class="fas fa-search fa-flip-horizontal"></i></button>
+            </form>
     
+            <div class="toggleList">
+                <div class="toggleInfo">
+                    <label>Toggle1 :</label>
+                    <div class="toggle">
+                        <div class="toggleInner"></div>
+                    </div>
+                </div>  
+                <div class="toggleInfo">
+                    <label>Toggle2 :</label>
+                    <div class="toggle">
+                        <div class="toggleInner"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+
+        <h2>result</h2>
+        <div class="containerCard"></div>
+
+
+        <h2>all Time top 10</h2>
+        <div class="containerTop"></div>
+
+    </div>
+
+
+    <script type="module" src="app.js" ></script>
 </body>
 </html>

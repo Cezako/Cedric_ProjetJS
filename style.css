@@ -1,0 +1,297 @@
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: rgb(44, 62, 68);
+    background-color: rgb(232, 240, 240);
+}
+
+
+
+
+h1 {
+    font-size: 52px;
+    margin: 60px auto;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+    font-family: impact;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 20px solid lightblue;
+    width: 60%;
+}
+
+h2 {
+    font-size: 42px;
+    margin-left: 20px;
+    color: rgb(44, 62, 68);
+}
+
+h3 { 
+    margin: 20px;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p{
+    font-family: sans-serif;
+    white-space: pre-wrap;
+    margin: 40px 20px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(44, 62, 68);
+    line-height: 36px;
+}
+
+
+
+
+/* CONTAINERS */
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.containerTop,
+.containerCard {
+    margin: 20px auto 200px;
+    padding: 40px;
+    background-color: lightblue;
+    color: rgb(44, 62, 68);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTop{
+    background-color: rgb(230, 201, 173);
+}
+
+.containerSearch{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* FORM */
+
+form {
+    display: flex;
+    height: 60px;
+    width: 50%;
+}
+
+form button {
+    margin: 0;
+    padding: 0 56px;
+    outline: none;
+    border: none;
+    border-radius: 20px 20px 20px 0px;
+    background-color: lightblue;
+    color: rgb(44, 62, 68);
+    font-weight: 700;
+    font-size: 30px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(92, 128, 140);
+    color: rgb(232, 240, 240);
+    transform: scale(1.1);
+}
+
+form #searchInput {
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
+    font-weight: 700;
+    padding: 20px 20px 0 20px;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 4px solid lightblue;
+    width: 60%;
+    font-size: 32px;
+}
+
+
+
+
+
+/* CARDS */
+
+.card {
+    width: 100%;
+}
+
+.cardHead {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardHead p {
+    font-size: 32px;
+}
+
+.cardHead .imgDiv{
+    margin: 0 auto;
+    border: 4px solid rgb(232, 240, 240);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.cardHead img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardHeadText {
+    text-align: left;
+    width : 50%;
+}
+
+.returnButton {
+    height: 80px;
+    width: 80px;
+    font-size: 60px;
+    color: rgb(44, 62, 68);
+    border: 4px solid rgb(232, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.returnButton:hover {
+    cursor: pointer;
+    background-color: rgb(92, 128, 140);
+    border: 4px solid rgb(92, 128, 140);
+    color: rgb(232, 240, 240);
+    transform: scale(1.1);
+}
+
+.containerTop .returnButton:hover {
+    background-color: rgb(140, 120, 92);
+    border: 4px solid rgb(140, 120, 92);
+}
+
+.recapCard {
+    margin: 20px auto;
+    padding: 16px;
+    border: 4px solid rgb(232, 240, 240);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16%;
+    transition: .2s;
+}
+
+.recapCard h3 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.recapCard:hover {
+    cursor: pointer;
+    background-color: rgb(116, 162, 178);
+    border: 4px solid rgb(116, 162, 178);
+    color: rgb(232, 240, 240);
+}
+
+.recapCard img {
+    transition : 1s;
+}
+
+.recapCard:hover img {
+    transform: scale(1.1);
+}
+
+.containerTop .recapCard:hover {
+    background-color: rgb(140, 120, 92);
+    border: 4px solid rgb(140, 120, 92);
+}
+
+
+
+
+/* TOGGLES */
+
+.toggleList {
+    width: 50%;
+}
+
+.toggleInfo {
+    margin: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.toggle {
+    background-color: lightblue;
+    padding: 8px 48px 8px 8px;
+    height: 40px;
+    width: 40px;
+}
+
+.toggleInner {
+    background-color: rgb(92, 128, 140);
+    height: 100%;
+    width: 100%;
+}
+
+.toggleChecked {
+    background-color: rgb(44, 62, 68);
+    padding: 8px 8px 8px 48px;
+}
+
+
+
+/* ERRORS */
+
+.error {
+    text-align: center;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+
+/* RESPONSIV */
+
+/*@media (min-width: 481px){
+
+    .recapCard {
+
+    }
+        
+
+}
+
+@media (min-width: 769px) {
+
+    .recapCard {
+
+    }
+
+}*/
